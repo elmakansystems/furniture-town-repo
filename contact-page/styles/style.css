@@ -1,0 +1,102 @@
+.flex {
+  display: flex;
+}
+.contact {
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.69) 42.52%,
+      rgba(196, 196, 196, 0) 100%
+    ),
+    url(../images/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.contact .content h1 {
+  color: #555555;
+  font-size: 36px;
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.ask_us {
+  width: 100%;
+  height: 450px;
+}
+.container {
+  height: 450px;
+  color: #555555;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content {
+  width: 100%;
+}
+.contact2 {
+  line-height: 200%;
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+}
+.contact2 p {
+  padding: 8px;
+}
+.siconbox {
+  margin: 5px;
+}
+.socialicon {
+  justify-content: flex-start;
+}
+.askform {
+  width: 100%;
+  padding: 20px;
+  line-height: 200%;
+  margin-top: 50px;
+}
+.form input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.footer {
+  height: 700px;
+  width: 100%;
+  background-image: url(../images/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rights {
+  height: 50px;
+  width: 100%;
+  background-color: #18191f;
+  opacity: 0.7;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.rights p {
+  /* display: inline-block; */
+
+  color: #ffffff;
+}
+.rights :nth-child(2) {
+  font-size: 24px;
+  padding-left: 2px;
+}
+.dflex {
+  display: flex;
+}
