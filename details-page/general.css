@@ -1,0 +1,39 @@
+@font-face {
+  font-family: cocon-regular;
+  src: url(./fonts/Cocon-RegularTR.ttf);
+  src: url(./fonts/coconnextarabic-light.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: cocon-regular;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container {
+  max-width: 1440px;
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 99%;
+  }
+}
