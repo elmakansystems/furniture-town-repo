@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fafafa;
+  font-family: "CoconÆ Next Arabic";
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container {
+  max-width: 1440px;
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 99%;
+  }
+}
