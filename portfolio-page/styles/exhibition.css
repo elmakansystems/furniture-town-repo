@@ -1,0 +1,64 @@
+.cont {
+  height: 500px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.s {
+  height: 100%;
+  flex: 1;
+  transition: all 0.8s;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin: 1px;
+}
+.s h1 {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 4rem;
+}
+.s:hover {
+  flex: 3;
+  background-blend-mode: normal;
+}
+
+.ayman {
+  background: url(../testpic/ayman.jpg) rgba(87, 84, 236, 0.4);
+}
+.tebo {
+  background: url(../testpic/tebo.jpg) rgba(87, 84, 236, 0.4);
+}
+.seada {
+  background: url(../testpic/seada.jpeg) rgba(87, 84, 236, 0.4);
+}
+
+.yara {
+  background: url(../testpic/yara.jpg) rgba(87, 84, 236, 0.4);
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+@media (max-width: 780px) {
+  .s h1 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  .s:hover {
+    flex: 5;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 1s;
+  }
+}
+
+/* @media (max-width: 780px) {
+  .s h1 {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+} */

@@ -1,0 +1,21 @@
+.dflex {
+  display: flex;
+}
+.cap {
+  text-transform: capitalize;
+}
+.f1 {
+  flex: 1;
+}
+.f2 {
+  flex: 2;
+}
+.flexdir {
+  flex-direction: column;
+}
+.hfull {
+  height: 100%;
+}
+.fpadding {
+  padding: 0 10px 10px 0;
+}
