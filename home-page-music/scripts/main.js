@@ -5,18 +5,40 @@ window.onload = ()=>{
     const mainLogo = document.querySelector(".main-logo")
     let time = 45
     let activeTime = 3000
-    setTimeout(() => {
-        let i =0
-        const classes = setInterval(() => {
-            let addClasses =  `l${i+1}`
-            imgs[i].classList.add(addClasses)
-            images[i].style.boxShadow="0px 2px 6px 0px rgba(0, 0, 0, 0.1)"
-            i++
-            if(i===16) clearInterval(classes)
-        }, time)
-    }, 1500)
+    
+    
+    
+    
+      const classes = ()=>{
+          setTimeout(() => {
+            let i =0
+            const classes = setInterval(() => {
+                let addClasses =  `l${i+1}`
+                imgs[i].classList.add(addClasses)
+                images[i].style.boxShadow="0px 2px 6px 0px rgba(0, 0, 0, 0.1)"
+                i++
+                if(i===16) clearInterval(classes)
+            }, time)
+        }, 1500)
+      }
+
+      // add line classes to the logos
+      classes()
+    
+      const removeClasses = ()=>{
+      const imgs = document.querySelectorAll(".logo-cont")
+      imgs.forEach(img=>{
+      const hasClass = img.classList.contains("active")
+      if(hasClass) {
+      img.classList.remove("active");
+      img.children[1].classList.remove("show-card")
+      }
+      })
+      }
+      // show cards one by one
+      const display = ()=>{
         let count = 0
-      setTimeout(() => {
+        setTimeout(() => {
           main.style.backgroundColor = "transparent"
           mainLogo.style.backgroundColor = "transparent"
         setInterval(() => {
@@ -28,20 +50,8 @@ window.onload = ()=>{
             if(count === imgs.length) count = 0
         }, activeTime)
       }, activeTime)
-
-        const removeClasses = ()=>{
-            const imgs = document.querySelectorAll(".logo-cont")
-            imgs.forEach(img=>{
-              const hasClass = img.classList.contains("active")
-                if(hasClass) {
-                    img.classList.remove("active");
-                    img.children[1].classList.remove("show-card")
-            }
-            })
-        }
-
-
-
+      }
+      display()
 // const fetchMusic = async ()=>{
 //   // let api = await fetch("https://music-api.seada.tech/")
 //   // let data = await api.json()
