@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.s1cont {
+  height: 700px;
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../images/trendTemp30.jpg");
+  background-position: center center;
+  background-size: 100%;
+}
+
+.logoscont {
+  height: 700px;
+  margin: auto;
+}
+.clogo {
+  height: 350px;
+  margin: auto;
+  position: relative;
+}
+.clogo img {
+  margin: auto;
+  max-height: 70%;
+  max-width: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.exhiblogo img {
+  border-radius: 350px;
+  margin-top: -60px;
+}
+.cont {
+  height: 500px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.s {
+  height: 100%;
+  flex: 1;
+  transition: all 0.8s;
+  display: flex;
+  align-items: center;
+  margin: 1px;
+}
+.s h1 {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 4rem;
+}
+.s:hover {
+  flex: 3;
+}
+
+.kidsroom {
+  background: url(../images/testpic/kidsroom.jpg);
+}
+.Couch {
+  background: url(../images/testpic/Couch.jpg);
+}
+.Livingroom {
+  background: url(../images/testpic/Livingroom.jpg);
+}
+.Kitchens {
+  background: url(../images/testpic/Kitchens.jpg);
+}
+.bathroom {
+  background: url(../images/testpic/bathroom.jpg);
+}
+.bg {
+  background-position: center;
+  background-size: cover;
+  /* background-blend-mode: multiply; */
+}
+@media (max-width: 780px) {
+  .s h1 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  .s:hover {
+    flex: 5;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 1s;
+  }
+  .cont {
+    height: 300px;
+  }
+}
